@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.noticias {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    gap: 1rem;
+}
+
+.card {
+    margin: 0rem 2rem;
+}
+
+.cardbody {
+    margin: 2rem;
+}
+
+.cardmisvis {
+    margin: 3rem;
+}
+
+.noticias img {
+    width: 100%;
+}
+
+.carousel img {
+    width: 100%;
+}
+
+.formulario {
+    background: #fff;
+    margin-top: 3rem;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    min-width: 320px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.formbutt {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.formulario2 {
+    background: #fff;
+    margin-top: 3rem;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    min-width: 300px;
+    max-width: 500px;
+    width: 100%;
+}

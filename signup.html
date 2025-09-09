@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="CSS/styles.css" type="text/css">
+    <script src="JS/functions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    
+<header class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+             <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Noticias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="admin.html">Admin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="signup.html">Sign up</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="mision.html">Mision</a></li>
+            <li><a class="dropdown-item" href="vision.html">Vision</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="equipotrabajo.html">Equipo de trabajo</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    </header>
+
+    <main>
+    <div class="formulario2">
+        <h3>Ingrese los datos para registrarse</h3>
+        <form id="formulario">
+            <div>
+                <div>
+                    <label for="nombres" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" id="nombres" name="nombres">
+                </div>
+                <div>
+                    <label for="apellidos" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="apellidos" name="apellidos">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div>
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" name="telefono">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-2">
+                    <label for="estrato" class="form-label">Estrato</label>
+                    <input type="number" class="form-control" id="estrato" name="estrato">
+                </div>
+                <div>
+                    <label for="fechaNacimiento" class="form-label">Fecha Nacimiento</label>
+                    <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento">
+                </div>
+                <div>
+                    <label for="grupoSanguineo" class="form-label">Grupo Sanguíneo</label>
+                    <select class="form-select" id="grupoSanguineo" name="grupoSanguineo">
+                        <option value="">Select</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-3 align-items-center">
+                <div class="col-3">
+                    <label class="form-label">Género</label>
+                    <div>
+                        <input type="radio" id="masculino" name="genero" value="Masculino" required>
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="femenino" name="genero" value="Femenino" required>
+                        <label for="femenino">Femenino</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <label class="form-label">Actividades Favoritas</label>
+                    <div>
+                        <input type="checkbox" id="futbol" name="actividades" value="Futbol">
+                        <label for="futbol">Futbol</label>
+                        <input type="checkbox" id="baloncesto" name="actividades" value="Baloncesto">
+                        <label for="baloncesto">Baloncesto</label>
+                        <input type="checkbox" id="voleibol" name="actividades" value="Voleibol">
+                        <label for="voleibol">Voleibol</label>
+                        <input type="checkbox" id="ciclismo" name="actividades" value="Ciclismo">
+                        <label for="ciclismo">Ciclismo</label>
+                    </div>
+                </div>
+            </div>
+            <div class="formbutt mt-4">
+                <button type="submit" class="btn btn-success">Registrar</button>
+                <button type="button" class="btn btn-danger" onclick="document.getElementById('signupForm').reset();">Cancelar</button>
+            </div>
+        </form>
+    </div>
+    </main>
+
+</body>
+</html>
