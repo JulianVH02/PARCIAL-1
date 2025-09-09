@@ -1,4 +1,4 @@
-// ...existing code...
+
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('formulario');
     if (form) {
@@ -83,7 +83,8 @@ function cancelar() {
     document.getElementById('loginForm').reset();
     window.location.href = "index.html";
 }
-var search = document.getElementById("search").value;
+
 function search() {
-            alert("Tu información digitada fue: " + search);
+    var search = document.getElementById("search").value;
+    alert("Tu información digitada fue: " + search);
 }
